@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		421EFEA3A11FBDE9A6972EEB /* libPods-HenriPotierUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB5727B2DF865E76BA70B96 /* libPods-HenriPotierUITests.a */; };
 		4E76501E1E33581100565C69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E76501D1E33581100565C69 /* main.m */; };
 		4E7650211E33581100565C69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650201E33581100565C69 /* AppDelegate.m */; };
 		4E7650271E33581100565C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7650251E33581100565C69 /* Main.storyboard */; };
@@ -15,6 +16,39 @@
 		4E7650371E33581100565C69 /* HenriPotierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650361E33581100565C69 /* HenriPotierTests.m */; };
 		4E7650421E33581100565C69 /* HenriPotierUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650411E33581100565C69 /* HenriPotierUITests.m */; };
 		4E7650531E335DE900565C69 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650521E335DE900565C69 /* AppDependencies.m */; };
+		4EBE209E1E36AD7E007E063B /* SliceOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */; };
+		4EBE20A11E36AD97007E063B /* PercentageOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A01E36AD97007E063B /* PercentageOfferItem.m */; };
+		4EBE20A41E36ADD5007E063B /* MinusOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A31E36ADD5007E063B /* MinusOfferItem.m */; };
+		4EBE20A91E37DFCF007E063B /* LocalCachedDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A81E37DFCF007E063B /* LocalCachedDataStore.m */; };
+		4EC7DC3F1E337196004B4D51 /* RootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC3E1E337196004B4D51 /* RootWireframe.m */; };
+		4EC7DC4E1E337548004B4D51 /* LibraryWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC4D1E337548004B4D51 /* LibraryWireframe.m */; };
+		4EC7DC541E33755A004B4D51 /* CartWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC531E33755A004B4D51 /* CartWireframe.m */; };
+		4EC7DC571E337575004B4D51 /* CartPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC561E337575004B4D51 /* CartPresenter.m */; };
+		4EC7DC5A1E33758E004B4D51 /* LibraryPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC591E33758E004B4D51 /* LibraryPresenter.m */; };
+		4EC7DC5D1E337806004B4D51 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC5C1E337806004B4D51 /* LibraryViewController.m */; };
+		4EC7DC621E33797A004B4D51 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC611E33797A004B4D51 /* CartViewController.m */; };
+		4EC7DC671E33854E004B4D51 /* LibraryDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC661E33854E004B4D51 /* LibraryDisplayData.m */; };
+		4EC7DC6A1E33867C004B4D51 /* LibraryDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC691E33867C004B4D51 /* LibraryDisplayItem.m */; };
+		4EC7DC6D1E339795004B4D51 /* LibraryDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC6C1E339795004B4D51 /* LibraryDisplayDataCollector.m */; };
+		4EC7DC761E33A331004B4D51 /* LibraryInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC751E33A331004B4D51 /* LibraryInteractor.m */; };
+		4EC7DC791E33A438004B4D51 /* LibraryDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC781E33A438004B4D51 /* LibraryDataManager.m */; };
+		4EC7DC7C1E33A919004B4D51 /* BookItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC7B1E33A919004B4D51 /* BookItem.m */; };
+		4EC7DC831E33B890004B4D51 /* LocalDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC821E33B890004B4D51 /* LocalDataStore.m */; };
+		4EC7DC861E33DAAB004B4D51 /* LibraryItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC851E33DAAB004B4D51 /* LibraryItemViewCell.m */; };
+		4EC7DC901E34CED3004B4D51 /* OfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC8F1E34CED3004B4D51 /* OfferItem.m */; };
+		4EC7DC961E34E4AA004B4D51 /* CartDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC951E34E4AA004B4D51 /* CartDataManager.m */; };
+		4EC7DC991E34E8C0004B4D51 /* CartInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC981E34E8C0004B4D51 /* CartInteractor.m */; };
+		4EC7DC9D1E34EC69004B4D51 /* CartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DC9C1E34EC69004B4D51 /* CartItem.m */; };
+		4EC7DCA41E34F5E1004B4D51 /* CartDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCA31E34F5E1004B4D51 /* CartDisplayDataCollector.m */; };
+		4EC7DCA71E34F5EE004B4D51 /* CartDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCA61E34F5EE004B4D51 /* CartDisplayData.m */; };
+		4EC7DCAB1E34F60B004B4D51 /* CartDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCAA1E34F60B004B4D51 /* CartDisplayItem.m */; };
+		4EC7DCAE1E34FE20004B4D51 /* CartItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCAD1E34FE20004B4D51 /* CartItemViewCell.m */; };
+		4EC7DCB11E351484004B4D51 /* AppReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCB01E351484004B4D51 /* AppReachability.m */; };
+		4EC7DCB81E351FAE004B4D51 /* RemoteDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCB71E351FAE004B4D51 /* RemoteDataStore.m */; };
+		4EC7DCBE1E352553004B4D51 /* HenryPotier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCBC1E352553004B4D51 /* HenryPotier.xcdatamodeld */; };
+		4EEF774B1E3A7391001EBB42 /* GoToCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF774A1E3A7391001EBB42 /* GoToCartView.m */; };
+		76FD5C04005CEEE67A1A9BD7 /* libPods-HenriPotierTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B9169074BDEA174A2B2CBD /* libPods-HenriPotierTests.a */; };
+		A514067E77D865CE8715101A /* libPods-HenriPotier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		395C5225EBCE8342EA2302DB /* Pods-HenriPotierUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierUITests/Pods-HenriPotierUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47B9169074BDEA174A2B2CBD /* libPods-HenriPotierTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HenriPotierTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7650191E33581100565C69 /* HenriPotier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HenriPotier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E76501D1E33581100565C69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E76501F1E33581100565C69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +87,83 @@
 		4E7650431E33581100565C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7650511E335DE900565C69 /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		4E7650521E335DE900565C69 /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		4EBE209C1E36AD7E007E063B /* SliceOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceOfferItem.h; sourceTree = "<group>"; };
+		4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliceOfferItem.m; sourceTree = "<group>"; };
+		4EBE209F1E36AD97007E063B /* PercentageOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentageOfferItem.h; sourceTree = "<group>"; };
+		4EBE20A01E36AD97007E063B /* PercentageOfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PercentageOfferItem.m; sourceTree = "<group>"; };
+		4EBE20A21E36ADD5007E063B /* MinusOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinusOfferItem.h; sourceTree = "<group>"; };
+		4EBE20A31E36ADD5007E063B /* MinusOfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinusOfferItem.m; sourceTree = "<group>"; };
+		4EBE20A61E37D231007E063B /* LibraryModuleDelegateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryModuleDelegateInterface.h; sourceTree = "<group>"; };
+		4EBE20A71E37DFCF007E063B /* LocalCachedDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalCachedDataStore.h; sourceTree = "<group>"; };
+		4EBE20A81E37DFCF007E063B /* LocalCachedDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalCachedDataStore.m; sourceTree = "<group>"; };
+		4EBE20AD1E37FCC8007E063B /* CartModuleDelegateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartModuleDelegateInterface.h; sourceTree = "<group>"; };
+		4EC7DC3D1E337196004B4D51 /* RootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootWireframe.h; sourceTree = "<group>"; };
+		4EC7DC3E1E337196004B4D51 /* RootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootWireframe.m; sourceTree = "<group>"; };
+		4EC7DC4C1E337548004B4D51 /* LibraryWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryWireframe.h; sourceTree = "<group>"; };
+		4EC7DC4D1E337548004B4D51 /* LibraryWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryWireframe.m; sourceTree = "<group>"; };
+		4EC7DC521E33755A004B4D51 /* CartWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartWireframe.h; sourceTree = "<group>"; };
+		4EC7DC531E33755A004B4D51 /* CartWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartWireframe.m; sourceTree = "<group>"; };
+		4EC7DC551E337575004B4D51 /* CartPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartPresenter.h; sourceTree = "<group>"; };
+		4EC7DC561E337575004B4D51 /* CartPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartPresenter.m; sourceTree = "<group>"; };
+		4EC7DC581E33758E004B4D51 /* LibraryPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryPresenter.h; sourceTree = "<group>"; };
+		4EC7DC591E33758E004B4D51 /* LibraryPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryPresenter.m; sourceTree = "<group>"; };
+		4EC7DC5B1E337806004B4D51 /* LibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
+		4EC7DC5C1E337806004B4D51 /* LibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryViewController.m; sourceTree = "<group>"; };
+		4EC7DC5F1E337861004B4D51 /* LibraryViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryViewInterface.h; sourceTree = "<group>"; };
+		4EC7DC601E33797A004B4D51 /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		4EC7DC611E33797A004B4D51 /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		4EC7DC631E337987004B4D51 /* CartViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewInterface.h; sourceTree = "<group>"; };
+		4EC7DC641E337EFD004B4D51 /* LibraryModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryModuleInterface.h; sourceTree = "<group>"; };
+		4EC7DC651E33854E004B4D51 /* LibraryDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDisplayData.h; sourceTree = "<group>"; };
+		4EC7DC661E33854E004B4D51 /* LibraryDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDisplayData.m; sourceTree = "<group>"; };
+		4EC7DC681E33867C004B4D51 /* LibraryDisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDisplayItem.h; sourceTree = "<group>"; };
+		4EC7DC691E33867C004B4D51 /* LibraryDisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDisplayItem.m; sourceTree = "<group>"; };
+		4EC7DC6B1E339795004B4D51 /* LibraryDisplayDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDisplayDataCollector.h; sourceTree = "<group>"; };
+		4EC7DC6C1E339795004B4D51 /* LibraryDisplayDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDisplayDataCollector.m; sourceTree = "<group>"; };
+		4EC7DC731E33A171004B4D51 /* LibraryInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryInteractorIO.h; sourceTree = "<group>"; };
+		4EC7DC741E33A331004B4D51 /* LibraryInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryInteractor.h; sourceTree = "<group>"; };
+		4EC7DC751E33A331004B4D51 /* LibraryInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryInteractor.m; sourceTree = "<group>"; };
+		4EC7DC771E33A438004B4D51 /* LibraryDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryDataManager.h; sourceTree = "<group>"; };
+		4EC7DC781E33A438004B4D51 /* LibraryDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryDataManager.m; sourceTree = "<group>"; };
+		4EC7DC7A1E33A919004B4D51 /* BookItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookItem.h; sourceTree = "<group>"; };
+		4EC7DC7B1E33A919004B4D51 /* BookItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookItem.m; sourceTree = "<group>"; };
+		4EC7DC811E33B890004B4D51 /* LocalDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalDataStore.h; sourceTree = "<group>"; };
+		4EC7DC821E33B890004B4D51 /* LocalDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalDataStore.m; sourceTree = "<group>"; };
+		4EC7DC841E33DAAB004B4D51 /* LibraryItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryItemViewCell.h; sourceTree = "<group>"; };
+		4EC7DC851E33DAAB004B4D51 /* LibraryItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryItemViewCell.m; sourceTree = "<group>"; };
+		4EC7DC8E1E34CED3004B4D51 /* OfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferItem.h; sourceTree = "<group>"; };
+		4EC7DC8F1E34CED3004B4D51 /* OfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferItem.m; sourceTree = "<group>"; };
+		4EC7DC911E34CF76004B4D51 /* OfferType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OfferType.h; sourceTree = "<group>"; };
+		4EC7DC941E34E4AA004B4D51 /* CartDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartDataManager.h; sourceTree = "<group>"; };
+		4EC7DC951E34E4AA004B4D51 /* CartDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartDataManager.m; sourceTree = "<group>"; };
+		4EC7DC971E34E8C0004B4D51 /* CartInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartInteractor.h; sourceTree = "<group>"; };
+		4EC7DC981E34E8C0004B4D51 /* CartInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartInteractor.m; sourceTree = "<group>"; };
+		4EC7DC9A1E34E92A004B4D51 /* CartInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartInteractorIO.h; sourceTree = "<group>"; };
+		4EC7DC9B1E34EC69004B4D51 /* CartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItem.h; sourceTree = "<group>"; };
+		4EC7DC9C1E34EC69004B4D51 /* CartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItem.m; sourceTree = "<group>"; };
+		4EC7DCA11E34F336004B4D51 /* CartModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartModuleInterface.h; sourceTree = "<group>"; };
+		4EC7DCA21E34F5E1004B4D51 /* CartDisplayDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartDisplayDataCollector.h; sourceTree = "<group>"; };
+		4EC7DCA31E34F5E1004B4D51 /* CartDisplayDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartDisplayDataCollector.m; sourceTree = "<group>"; };
+		4EC7DCA51E34F5EE004B4D51 /* CartDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartDisplayData.h; sourceTree = "<group>"; };
+		4EC7DCA61E34F5EE004B4D51 /* CartDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartDisplayData.m; sourceTree = "<group>"; };
+		4EC7DCA91E34F60B004B4D51 /* CartDisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartDisplayItem.h; sourceTree = "<group>"; };
+		4EC7DCAA1E34F60B004B4D51 /* CartDisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartDisplayItem.m; sourceTree = "<group>"; };
+		4EC7DCAC1E34FE20004B4D51 /* CartItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemViewCell.h; sourceTree = "<group>"; };
+		4EC7DCAD1E34FE20004B4D51 /* CartItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemViewCell.m; sourceTree = "<group>"; };
+		4EC7DCAF1E351484004B4D51 /* AppReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppReachability.h; sourceTree = "<group>"; };
+		4EC7DCB01E351484004B4D51 /* AppReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppReachability.m; sourceTree = "<group>"; };
+		4EC7DCB61E351FAE004B4D51 /* RemoteDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDataStore.h; sourceTree = "<group>"; };
+		4EC7DCB71E351FAE004B4D51 /* RemoteDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDataStore.m; sourceTree = "<group>"; };
+		4EC7DCBD1E352553004B4D51 /* HenryPotier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HenryPotier.xcdatamodel; sourceTree = "<group>"; };
+		4EEF77491E3A7391001EBB42 /* GoToCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToCartView.h; sourceTree = "<group>"; };
+		4EEF774A1E3A7391001EBB42 /* GoToCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToCartView.m; sourceTree = "<group>"; };
+		582B0AECE476BD7EBAB58A5A /* Pods-HenriPotierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierTests/Pods-HenriPotierTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E5D3AADEBE2AF9EF3316675 /* Pods-HenriPotierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierUITests/Pods-HenriPotierUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HenriPotier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C4B58AB1E2048D11417134 /* Pods-HenriPotier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotier.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotier/Pods-HenriPotier.release.xcconfig"; sourceTree = "<group>"; };
+		C7D5378F9F6C7D97EBC770AE /* Pods-HenriPotier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotier.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotier/Pods-HenriPotier.debug.xcconfig"; sourceTree = "<group>"; };
+		DFB5727B2DF865E76BA70B96 /* libPods-HenriPotierUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HenriPotierUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF24B06725407227848A4C6D /* Pods-HenriPotierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierTests/Pods-HenriPotierTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A514067E77D865CE8715101A /* libPods-HenriPotier.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FD5C04005CEEE67A1A9BD7 /* libPods-HenriPotierTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +187,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421EFEA3A11FBDE9A6972EEB /* libPods-HenriPotierUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23EF74AB35B97E879311021E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D5378F9F6C7D97EBC770AE /* Pods-HenriPotier.debug.xcconfig */,
+				A8C4B58AB1E2048D11417134 /* Pods-HenriPotier.release.xcconfig */,
+				FF24B06725407227848A4C6D /* Pods-HenriPotierTests.debug.xcconfig */,
+				582B0AECE476BD7EBAB58A5A /* Pods-HenriPotierTests.release.xcconfig */,
+				395C5225EBCE8342EA2302DB /* Pods-HenriPotierUITests.debug.xcconfig */,
+				8E5D3AADEBE2AF9EF3316675 /* Pods-HenriPotierUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4E7650101E33581000565C69 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +214,8 @@
 				4E7650351E33581100565C69 /* HenriPotierTests */,
 				4E7650401E33581100565C69 /* HenriPotierUITests */,
 				4E76501A1E33581100565C69 /* Products */,
+				23EF74AB35B97E879311021E /* Pods */,
+				C1D5D5091F46DE00D09809B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +285,8 @@
 				4E7650201E33581100565C69 /* AppDelegate.m */,
 				4E7650511E335DE900565C69 /* AppDependencies.h */,
 				4E7650521E335DE900565C69 /* AppDependencies.m */,
+				4EC7DCAF1E351484004B4D51 /* AppReachability.h */,
+				4EC7DCB01E351484004B4D51 /* AppReachability.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -190,6 +323,8 @@
 		4E7650571E336AA500565C69 /* ApplicationLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC921E34E494004B4D51 /* Interactor */,
+				4EC7DC931E34E494004B4D51 /* Manager */,
 			);
 			path = ApplicationLogic;
 			sourceTree = "<group>";
@@ -197,6 +332,8 @@
 		4E7650591E336AFB00565C69 /* ModuleInterface */ = {
 			isa = PBXGroup;
 			children = (
+				4EBE20AD1E37FCC8007E063B /* CartModuleDelegateInterface.h */,
+				4EC7DCA11E34F336004B4D51 /* CartModuleInterface.h */,
 			);
 			path = ModuleInterface;
 			sourceTree = "<group>";
@@ -204,6 +341,9 @@
 		4E76505A1E336AFB00565C69 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC4F1E33755A004B4D51 /* Presenter */,
+				4EC7DC501E33755A004B4D51 /* View */,
+				4EC7DC511E33755A004B4D51 /* Wireframe */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -211,6 +351,8 @@
 		4E76505B1E336B0F00565C69 /* ApplicationLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC6E1E3399BB004B4D51 /* Interactor */,
+				4EC7DC6F1E3399BB004B4D51 /* Manager */,
 			);
 			path = ApplicationLogic;
 			sourceTree = "<group>";
@@ -218,6 +360,8 @@
 		4E76505C1E336B0F00565C69 /* ModuleInterface */ = {
 			isa = PBXGroup;
 			children = (
+				4EBE20A61E37D231007E063B /* LibraryModuleDelegateInterface.h */,
+				4EC7DC641E337EFD004B4D51 /* LibraryModuleInterface.h */,
 			);
 			path = ModuleInterface;
 			sourceTree = "<group>";
@@ -225,6 +369,9 @@
 		4E76505D1E336B0F00565C69 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC491E337548004B4D51 /* Presenter */,
+				4EC7DC4A1E337548004B4D51 /* View */,
+				4EC7DC4B1E337548004B4D51 /* Wireframe */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -242,6 +389,19 @@
 		4EC7DC3A1E336D4C004B4D51 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC7A1E33A919004B4D51 /* BookItem.h */,
+				4EC7DC7B1E33A919004B4D51 /* BookItem.m */,
+				4EC7DC9B1E34EC69004B4D51 /* CartItem.h */,
+				4EC7DC9C1E34EC69004B4D51 /* CartItem.m */,
+				4EC7DC8E1E34CED3004B4D51 /* OfferItem.h */,
+				4EC7DC8F1E34CED3004B4D51 /* OfferItem.m */,
+				4EBE209C1E36AD7E007E063B /* SliceOfferItem.h */,
+				4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */,
+				4EBE209F1E36AD97007E063B /* PercentageOfferItem.h */,
+				4EBE20A01E36AD97007E063B /* PercentageOfferItem.m */,
+				4EBE20A21E36ADD5007E063B /* MinusOfferItem.h */,
+				4EBE20A31E36ADD5007E063B /* MinusOfferItem.m */,
+				4EC7DC911E34CF76004B4D51 /* OfferType.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +409,13 @@
 		4EC7DC3B1E336D4C004B4D51 /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				4EBE20A71E37DFCF007E063B /* LocalCachedDataStore.h */,
+				4EBE20A81E37DFCF007E063B /* LocalCachedDataStore.m */,
+				4EC7DC811E33B890004B4D51 /* LocalDataStore.h */,
+				4EC7DC821E33B890004B4D51 /* LocalDataStore.m */,
+				4EC7DCB61E351FAE004B4D51 /* RemoteDataStore.h */,
+				4EC7DCB71E351FAE004B4D51 /* RemoteDataStore.m */,
+				4EC7DCBC1E352553004B4D51 /* HenryPotier.xcdatamodeld */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -256,8 +423,132 @@
 		4EC7DC3C1E336D4C004B4D51 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4EC7DC3D1E337196004B4D51 /* RootWireframe.h */,
+				4EC7DC3E1E337196004B4D51 /* RootWireframe.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		4EC7DC491E337548004B4D51 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC581E33758E004B4D51 /* LibraryPresenter.h */,
+				4EC7DC591E33758E004B4D51 /* LibraryPresenter.m */,
+				4EC7DC6B1E339795004B4D51 /* LibraryDisplayDataCollector.h */,
+				4EC7DC6C1E339795004B4D51 /* LibraryDisplayDataCollector.m */,
+				4EC7DC651E33854E004B4D51 /* LibraryDisplayData.h */,
+				4EC7DC661E33854E004B4D51 /* LibraryDisplayData.m */,
+				4EC7DC681E33867C004B4D51 /* LibraryDisplayItem.h */,
+				4EC7DC691E33867C004B4D51 /* LibraryDisplayItem.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4EC7DC4A1E337548004B4D51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC5B1E337806004B4D51 /* LibraryViewController.h */,
+				4EC7DC5C1E337806004B4D51 /* LibraryViewController.m */,
+				4EC7DC841E33DAAB004B4D51 /* LibraryItemViewCell.h */,
+				4EC7DC851E33DAAB004B4D51 /* LibraryItemViewCell.m */,
+				4EC7DC5F1E337861004B4D51 /* LibraryViewInterface.h */,
+				4EEF77491E3A7391001EBB42 /* GoToCartView.h */,
+				4EEF774A1E3A7391001EBB42 /* GoToCartView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EC7DC4B1E337548004B4D51 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC4C1E337548004B4D51 /* LibraryWireframe.h */,
+				4EC7DC4D1E337548004B4D51 /* LibraryWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		4EC7DC4F1E33755A004B4D51 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC551E337575004B4D51 /* CartPresenter.h */,
+				4EC7DC561E337575004B4D51 /* CartPresenter.m */,
+				4EC7DCA21E34F5E1004B4D51 /* CartDisplayDataCollector.h */,
+				4EC7DCA31E34F5E1004B4D51 /* CartDisplayDataCollector.m */,
+				4EC7DCA51E34F5EE004B4D51 /* CartDisplayData.h */,
+				4EC7DCA61E34F5EE004B4D51 /* CartDisplayData.m */,
+				4EC7DCA91E34F60B004B4D51 /* CartDisplayItem.h */,
+				4EC7DCAA1E34F60B004B4D51 /* CartDisplayItem.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4EC7DC501E33755A004B4D51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC601E33797A004B4D51 /* CartViewController.h */,
+				4EC7DC611E33797A004B4D51 /* CartViewController.m */,
+				4EC7DCAC1E34FE20004B4D51 /* CartItemViewCell.h */,
+				4EC7DCAD1E34FE20004B4D51 /* CartItemViewCell.m */,
+				4EC7DC631E337987004B4D51 /* CartViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EC7DC511E33755A004B4D51 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC521E33755A004B4D51 /* CartWireframe.h */,
+				4EC7DC531E33755A004B4D51 /* CartWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		4EC7DC6E1E3399BB004B4D51 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC731E33A171004B4D51 /* LibraryInteractorIO.h */,
+				4EC7DC741E33A331004B4D51 /* LibraryInteractor.h */,
+				4EC7DC751E33A331004B4D51 /* LibraryInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4EC7DC6F1E3399BB004B4D51 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC771E33A438004B4D51 /* LibraryDataManager.h */,
+				4EC7DC781E33A438004B4D51 /* LibraryDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4EC7DC921E34E494004B4D51 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC9A1E34E92A004B4D51 /* CartInteractorIO.h */,
+				4EC7DC971E34E8C0004B4D51 /* CartInteractor.h */,
+				4EC7DC981E34E8C0004B4D51 /* CartInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4EC7DC931E34E494004B4D51 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4EC7DC941E34E4AA004B4D51 /* CartDataManager.h */,
+				4EC7DC951E34E4AA004B4D51 /* CartDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		C1D5D5091F46DE00D09809B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */,
+				47B9169074BDEA174A2B2CBD /* libPods-HenriPotierTests.a */,
+				DFB5727B2DF865E76BA70B96 /* libPods-HenriPotierUITests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +558,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E7650461E33581100565C69 /* Build configuration list for PBXNativeTarget "HenriPotier" */;
 			buildPhases = (
+				844060CFEE643E168635AD87 /* [CP] Check Pods Manifest.lock */,
 				4E7650151E33581000565C69 /* Sources */,
 				4E7650161E33581000565C69 /* Frameworks */,
 				4E7650171E33581000565C69 /* Resources */,
+				49E11A9C08BBE83F3A1120AF /* [CP] Embed Pods Frameworks */,
+				17483BB98948AEB696DC8F77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,9 +578,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E7650491E33581100565C69 /* Build configuration list for PBXNativeTarget "HenriPotierTests" */;
 			buildPhases = (
+				8E38AAD5B9EB02D620F88398 /* [CP] Check Pods Manifest.lock */,
 				4E76502E1E33581100565C69 /* Sources */,
 				4E76502F1E33581100565C69 /* Frameworks */,
 				4E7650301E33581100565C69 /* Resources */,
+				91CCF8B44535BF017C68DF4D /* [CP] Embed Pods Frameworks */,
+				8FE578471D22B9D350675208 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,9 +599,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E76504C1E33581100565C69 /* Build configuration list for PBXNativeTarget "HenriPotierUITests" */;
 			buildPhases = (
+				4F72CD4858BD6D7E49998F96 /* [CP] Check Pods Manifest.lock */,
 				4E7650391E33581100565C69 /* Sources */,
 				4E76503A1E33581100565C69 /* Frameworks */,
 				4E76503B1E33581100565C69 /* Resources */,
+				40C54D3473A5D418FAAD47F5 /* [CP] Embed Pods Frameworks */,
+				81001E8837814F8EB87F1002 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,14 +691,183 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17483BB98948AEB696DC8F77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotier/Pods-HenriPotier-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40C54D3473A5D418FAAD47F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierUITests/Pods-HenriPotierUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49E11A9C08BBE83F3A1120AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotier/Pods-HenriPotier-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F72CD4858BD6D7E49998F96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81001E8837814F8EB87F1002 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierUITests/Pods-HenriPotierUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844060CFEE643E168635AD87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8E38AAD5B9EB02D620F88398 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE578471D22B9D350675208 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierTests/Pods-HenriPotierTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91CCF8B44535BF017C68DF4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HenriPotierTests/Pods-HenriPotierTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4E7650151E33581000565C69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EC7DC991E34E8C0004B4D51 /* CartInteractor.m in Sources */,
+				4EC7DCB81E351FAE004B4D51 /* RemoteDataStore.m in Sources */,
+				4EC7DC541E33755A004B4D51 /* CartWireframe.m in Sources */,
+				4EC7DCB11E351484004B4D51 /* AppReachability.m in Sources */,
+				4EC7DC831E33B890004B4D51 /* LocalDataStore.m in Sources */,
+				4EC7DCAB1E34F60B004B4D51 /* CartDisplayItem.m in Sources */,
+				4EC7DCA71E34F5EE004B4D51 /* CartDisplayData.m in Sources */,
+				4EC7DC4E1E337548004B4D51 /* LibraryWireframe.m in Sources */,
+				4EC7DC7C1E33A919004B4D51 /* BookItem.m in Sources */,
+				4EC7DC671E33854E004B4D51 /* LibraryDisplayData.m in Sources */,
+				4EC7DC5A1E33758E004B4D51 /* LibraryPresenter.m in Sources */,
+				4EC7DCBE1E352553004B4D51 /* HenryPotier.xcdatamodeld in Sources */,
+				4EC7DC6D1E339795004B4D51 /* LibraryDisplayDataCollector.m in Sources */,
+				4EC7DC5D1E337806004B4D51 /* LibraryViewController.m in Sources */,
+				4EBE209E1E36AD7E007E063B /* SliceOfferItem.m in Sources */,
+				4EC7DC3F1E337196004B4D51 /* RootWireframe.m in Sources */,
 				4E7650531E335DE900565C69 /* AppDependencies.m in Sources */,
+				4EC7DCA41E34F5E1004B4D51 /* CartDisplayDataCollector.m in Sources */,
+				4EBE20A11E36AD97007E063B /* PercentageOfferItem.m in Sources */,
+				4EC7DC761E33A331004B4D51 /* LibraryInteractor.m in Sources */,
+				4EC7DCAE1E34FE20004B4D51 /* CartItemViewCell.m in Sources */,
+				4EBE20A91E37DFCF007E063B /* LocalCachedDataStore.m in Sources */,
+				4EC7DC791E33A438004B4D51 /* LibraryDataManager.m in Sources */,
+				4EC7DC621E33797A004B4D51 /* CartViewController.m in Sources */,
+				4EC7DC961E34E4AA004B4D51 /* CartDataManager.m in Sources */,
+				4EBE20A41E36ADD5007E063B /* MinusOfferItem.m in Sources */,
+				4EC7DC571E337575004B4D51 /* CartPresenter.m in Sources */,
+				4EEF774B1E3A7391001EBB42 /* GoToCartView.m in Sources */,
+				4EC7DC6A1E33867C004B4D51 /* LibraryDisplayItem.m in Sources */,
 				4E7650211E33581100565C69 /* AppDelegate.m in Sources */,
+				4EC7DC901E34CED3004B4D51 /* OfferItem.m in Sources */,
 				4E76501E1E33581100565C69 /* main.m in Sources */,
+				4EC7DC9D1E34EC69004B4D51 /* CartItem.m in Sources */,
+				4EC7DC861E33DAAB004B4D51 /* LibraryItemViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +1014,7 @@
 		};
 		4E7650471E33581100565C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D5378F9F6C7D97EBC770AE /* Pods-HenriPotier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8632B2XJP3;
@@ -557,6 +1027,7 @@
 		};
 		4E7650481E33581100565C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C4B58AB1E2048D11417134 /* Pods-HenriPotier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8632B2XJP3;
@@ -569,6 +1040,7 @@
 		};
 		4E76504A1E33581100565C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF24B06725407227848A4C6D /* Pods-HenriPotierTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8632B2XJP3;
@@ -582,6 +1054,7 @@
 		};
 		4E76504B1E33581100565C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582B0AECE476BD7EBAB58A5A /* Pods-HenriPotierTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8632B2XJP3;
@@ -595,6 +1068,7 @@
 		};
 		4E76504D1E33581100565C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 395C5225EBCE8342EA2302DB /* Pods-HenriPotierUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8632B2XJP3;
 				INFOPLIST_FILE = HenriPotierUITests/Info.plist;
@@ -607,6 +1081,7 @@
 		};
 		4E76504E1E33581100565C69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5D3AADEBE2AF9EF3316675 /* Pods-HenriPotierUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8632B2XJP3;
 				INFOPLIST_FILE = HenriPotierUITests/Info.plist;
@@ -657,6 +1132,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4EC7DCBC1E352553004B4D51 /* HenryPotier.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4EC7DCBD1E352553004B4D51 /* HenryPotier.xcdatamodel */,
+			);
+			currentVersion = 4EC7DCBD1E352553004B4D51 /* HenryPotier.xcdatamodel */;
+			path = HenryPotier.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4E7650111E33581000565C69 /* Project object */;
 }
