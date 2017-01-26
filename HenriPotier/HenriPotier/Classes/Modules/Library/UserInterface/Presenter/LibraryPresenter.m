@@ -42,11 +42,24 @@
 {
     if (items == nil || items.count == 0)
     {
-        [self.userInterface showNoContentMessage];
+        [self.userInterface showNoContentMessageWithError:nil];
     }
     else
     {
         [self.userInterface showLibraryDisplayData:[self libraryDisplayDataWithBookItems:items]];
+    }
+}
+
+- (void)foundingBookItemsFailedWithError:(NSError *)error
+{
+    if([error.domain isEqualToString:NSURLErrorDomain]
+       && error.code == NSURLErrorNotConnectedToInternet)
+    {
+        [self.userInterface showNoContentMessageWithError:@"Verifiez votre connection internet."];
+    }
+    else
+    {
+        [self.userInterface showNoContentMessageWithError:error.localizedDescription];
     }
 }
 

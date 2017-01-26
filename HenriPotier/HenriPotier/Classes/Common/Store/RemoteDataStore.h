@@ -12,7 +12,7 @@
 @class OfferItem;
 
 typedef void(^RemoteDataStoreFetchOfferItemsCompletionBlock)(NSArray<OfferItem*> *results);
-typedef void(^RemoteDataStoreFetchBookItemsCompletionBlock)(NSArray<BookItem*> *results);
+typedef void(^RemoteDataStoreFetchBookItemsCompletionBlock)(NSArray<BookItem*> *results, NSError *error);
 typedef void(^RemoteDataStoreFetchImageCompletionBlock)(NSString *path);
 
 @interface RemoteDataStore : NSObject

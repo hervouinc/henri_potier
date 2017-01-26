@@ -30,18 +30,31 @@
 {
     __weak typeof(self) welf = self;
 
-    [self.dataManager bookItemsWithCompletionBlock:^(NSArray<BookItem*> *bookItems) {
+    [self.dataManager bookItemsWithCompletionBlock:^(NSArray<BookItem*> *bookItems, NSError *error) {
+
+        if(error)
+        {
+            [welf.output foundingBookItemsFailedWithError:error];
+            return;
+        }
+
+        [welf findCoverForBookItems:bookItems];
 
         [welf.output foundBookItems:bookItems];
+    }];
+}
 
-        [bookItems enumerateObjectsUsingBlock:^(BookItem*  _Nonnull bookItem, NSUInteger idx, BOOL * _Nonnull stop) {
-            if(bookItem.imageName == nil)
-            {
-                [self.dataManager addCoverImageToBookItemWithIsbn:bookItem.isbn completionBlock:^(BookItem *item) {
-                    [welf.output updatedBookItem:item];
-                }];
-            }
-        }];
+- (void)findCoverForBookItems:(NSArray<BookItem*>*)bookItems
+{
+    __weak typeof(self) welf = self;
+
+    [bookItems enumerateObjectsUsingBlock:^(BookItem*  _Nonnull bookItem, NSUInteger idx, BOOL * _Nonnull stop) {
+        if(bookItem.imageName == nil)
+        {
+            [welf.dataManager addCoverImageToBookItemWithIsbn:bookItem.isbn completionBlock:^(BookItem *item) {
+                [welf.output updatedBookItem:item];
+            }];
+        }
     }];
 }
 

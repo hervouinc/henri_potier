@@ -16,5 +16,6 @@
 
 @protocol LibraryInteractorOutput <NSObject>
 - (void)foundBookItems:(NSArray<BookItem*> *)items;
+- (void)foundingBookItemsFailedWithError:(NSError*)error;
 - (void)updatedBookItem:(BookItem *)item;
 @end

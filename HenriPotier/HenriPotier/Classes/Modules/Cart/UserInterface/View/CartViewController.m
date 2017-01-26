@@ -13,11 +13,12 @@
 
 static NSString* const CartCellIdentifier = @"CartCell";
 
-@interface CartViewController ()
+@interface CartViewController () <UITableViewDataSource>
 @property (nonatomic, strong)   CartDisplayData* data;
 @property (nonatomic, strong)   IBOutlet UIView* noContentView;
 @property (nonatomic, strong)   IBOutlet UILabel* labelOldPrice;
 @property (nonatomic, strong)   IBOutlet UILabel* labelPrice;
+@property (nonatomic, strong)   IBOutlet UITableView* tableView;
 @end
 
 @implementation CartViewController
@@ -25,6 +26,7 @@ static NSString* const CartCellIdentifier = @"CartCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     self.navigationItem.title = @"Panier";
 }
 
@@ -37,16 +39,13 @@ static NSString* const CartCellIdentifier = @"CartCell";
 - (void)showNoContentMessage
 {
     self.noContentView.hidden = NO;
-    [self.noContentView setFrame:CGRectMake(self.noContentView.frame.origin.x, self.noContentView.frame.origin.y, self.noContentView.frame.size.width, 120)];
-    [self.noContentView setNeedsLayout];
+    self.tableView.hidden = YES;
 }
 
 - (void)showCartDisplayData:(CartDisplayData *)data
 {
     self.noContentView.hidden = YES;
-    [self.noContentView setFrame:CGRectMake(self.noContentView.frame.origin.x, self.noContentView.frame.origin.y, self.noContentView.frame.size.width, 0)];
-    [self.noContentView setNeedsLayout];
-
+    self.tableView.hidden = NO;
     self.data = data;
     [self reloadEntries];
 }
@@ -90,11 +89,6 @@ static NSString* const CartCellIdentifier = @"CartCell";
     [cell addMinusButtonTarget:self action:@selector(didTapOnMinusButton:)];
 
     return cell;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
-{
-    return 10;
 }
 
 - (void)didTapOnPlusButton:(UIButton*)sender

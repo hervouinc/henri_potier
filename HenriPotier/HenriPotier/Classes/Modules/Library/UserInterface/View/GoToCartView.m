@@ -31,7 +31,7 @@
 
     if(self.number > 0)
     {
-        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 20, 20)];
+        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width - 20, 0, 20, 20)];
         numberLabel.font = [UIFont systemFontOfSize:12];
         numberLabel.text = [NSString stringWithFormat:@"%d", self.number];
         numberLabel.textAlignment = NSTextAlignmentCenter;

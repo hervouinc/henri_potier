@@ -12,7 +12,7 @@
 
 @protocol LibraryViewInterface <NSObject>
 
-- (void)showNoContentMessage;
+- (void)showNoContentMessageWithError:(NSString*)error;
 - (void)showLibraryDisplayData:(LibraryDisplayData *)data;
 - (void)showNumberOfItemsInCart:(int)numberOfItemsInCart;
 - (void)reloadEntries;

@@ -11,7 +11,7 @@
 #import "CartViewInterface.h"
 #import "CartModuleInterface.h"
 
-@interface CartViewController : UITableViewController <CartViewInterface>
+@interface CartViewController : UIViewController <CartViewInterface>
 
 @property (nonatomic, strong) id<CartModuleInterface> eventHandler;
 

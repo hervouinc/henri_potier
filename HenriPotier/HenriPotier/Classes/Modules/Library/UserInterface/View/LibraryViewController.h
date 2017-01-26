@@ -11,7 +11,7 @@
 #import "LibraryViewInterface.h"
 #import "LibraryModuleInterface.h"
 
-@interface LibraryViewController : UITableViewController <LibraryViewInterface>
+@interface LibraryViewController : UIViewController <LibraryViewInterface>
 
 @property (nonatomic, strong) id<LibraryModuleInterface>    eventHandler;
 

@@ -117,6 +117,8 @@ static NSString* const DataBaseName = @"DataModel.sqlite";
         {
             completionBlock([self cartItemFromManagedObject:managedObject]);
         }
+
+        [self.managedObjectContext save:NULL];
     }];
 }
 
@@ -145,6 +147,8 @@ static NSString* const DataBaseName = @"DataModel.sqlite";
         {
             completionBlock([self cartItemFromManagedObject:managedObject]);
         }
+
+        [self.managedObjectContext save:NULL];
     }];
 }
 
@@ -177,6 +181,7 @@ static NSString* const DataBaseName = @"DataModel.sqlite";
             [self.managedObjectContext deleteObject:obj];
         }];
 
+        [self.managedObjectContext save:NULL];
     }];
 }
 
@@ -186,7 +191,6 @@ static NSString* const DataBaseName = @"DataModel.sqlite";
 - (CartItem*)cartItemFromManagedObject:(NSManagedObject*)managedObject
 {
     return [CartItem cartItemWithBookItem:[BookItem bookItemWithTitle:[managedObject valueForKey:@"title"] isbn:[managedObject valueForKey:@"isbn"] price:[managedObject valueForKey:@"price"] imageName:[managedObject valueForKey:@"imageName"]] count:[managedObject valueForKey:@"count"]];
-
 }
 
 @end

@@ -13,7 +13,7 @@
 @class LocalCachedDataStore;
 @class BookItem;
 
-typedef void(^LibraryDataManagerItemsCompletionBlock)(NSArray<BookItem*> *results);
+typedef void(^LibraryDataManagerItemsCompletionBlock)(NSArray<BookItem*> *results, NSError *error);
 typedef void(^LibraryDataManagerItemCompletionBlock)(BookItem *item);
 
 @interface LibraryDataManager : NSObject

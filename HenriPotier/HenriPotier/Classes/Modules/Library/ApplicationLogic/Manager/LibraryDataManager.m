@@ -19,15 +19,15 @@
     NSArray<BookItem*> *bookItems = [self.localCachedDataStore retrieveBookItems];
     if(bookItems != nil & bookItems.count > 0)
     {
-        completionBlock(bookItems);
+        completionBlock(bookItems, nil);
         return;
     }
 
-    [self.remoteDataStore fetchBookItemsWithCompletionBlock:^(NSArray<BookItem*> *entries) {
+    [self.remoteDataStore fetchBookItemsWithCompletionBlock:^(NSArray<BookItem*> *entries, NSError *error) {
         [self.localCachedDataStore setUpBookItems:entries];
         if (completionBlock)
         {
-            completionBlock(entries);
+            completionBlock(entries, error);
         }
     }];
 }
