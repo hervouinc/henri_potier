@@ -45,7 +45,7 @@ static NSString* const OffersURL = @"http://henri-potier.xebia.fr/books/%@/comme
         
         if(completionBlock != nil)
         {
-            completionBlock(nil, error);
+            completionBlock(@[], error);
         }
     }];
 }

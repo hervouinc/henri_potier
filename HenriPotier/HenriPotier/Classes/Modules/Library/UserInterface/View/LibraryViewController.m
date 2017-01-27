@@ -17,9 +17,7 @@ static NSString* const LibraryCellIdentifier = @"LibraryCell";
 @interface LibraryViewController () <UITableViewDataSource>
 @property (nonatomic, strong)   LibraryDisplayData* data;
 @property (nonatomic, assign)   int numberOfItemsInCart;
-@property (nonatomic, strong)   IBOutlet UIView* noContentView;
 @property (nonatomic, strong)   IBOutlet UILabel* errorLabel;
-@property (nonatomic, strong)   IBOutlet UITableView* tableView;
 @end
 
 @implementation LibraryViewController

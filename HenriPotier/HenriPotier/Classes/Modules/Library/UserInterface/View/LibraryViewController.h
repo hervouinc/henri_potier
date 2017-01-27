@@ -15,4 +15,7 @@
 
 @property (nonatomic, strong) id<LibraryModuleInterface>    eventHandler;
 
+@property (nonatomic, strong)   IBOutlet UIView* noContentView;
+@property (nonatomic, strong)   IBOutlet UITableView* tableView;
+
 @end

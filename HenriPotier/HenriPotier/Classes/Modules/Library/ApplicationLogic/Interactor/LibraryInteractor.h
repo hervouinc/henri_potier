@@ -17,5 +17,6 @@
 @property (nonatomic, weak)     id<LibraryInteractorOutput> output;
 
 - (instancetype)initWithDataManager:(LibraryDataManager *)dataManager;
+- (void)findCoverForBookItems:(NSArray<BookItem*>*)bookItems;
 
 @end

@@ -16,6 +16,12 @@
 		4E7650371E33581100565C69 /* HenriPotierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650361E33581100565C69 /* HenriPotierTests.m */; };
 		4E7650421E33581100565C69 /* HenriPotierUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650411E33581100565C69 /* HenriPotierUITests.m */; };
 		4E7650531E335DE900565C69 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650521E335DE900565C69 /* AppDependencies.m */; };
+		4E825DA51E3BD59300ECA8C7 /* LibraryInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */; };
+		4E825DAE1E3BDB9C00ECA8C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DA81E3BDAC400ECA8C7 /* UIKit.framework */; };
+		4E825DB01E3BDBA100ECA8C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DAF1E3BDBA100ECA8C7 /* Foundation.framework */; };
+		4E825DB21E3BDBA700ECA8C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DB11E3BDBA700ECA8C7 /* XCTest.framework */; };
+		4E825DC01E3BDD7B00ECA8C7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DBF1E3BDD7B00ECA8C7 /* libOCMock.a */; };
+		4E825DC41E3C048300ECA8C7 /* LibraryPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */; };
 		4EBE209E1E36AD7E007E063B /* SliceOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */; };
 		4EBE20A11E36AD97007E063B /* PercentageOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A01E36AD97007E063B /* PercentageOfferItem.m */; };
 		4EBE20A41E36ADD5007E063B /* MinusOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A31E36ADD5007E063B /* MinusOfferItem.m */; };
@@ -87,6 +93,22 @@
 		4E7650431E33581100565C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7650511E335DE900565C69 /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		4E7650521E335DE900565C69 /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryInteractorTests.m; sourceTree = "<group>"; };
+		4E825DA81E3BDAC400ECA8C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E825DAF1E3BDBA100ECA8C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E825DB11E3BDBA700ECA8C7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4E825DB51E3BDBDD00ECA8C7 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		4E825DB61E3BDBDD00ECA8C7 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		4E825DB71E3BDBDD00ECA8C7 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		4E825DB81E3BDBDD00ECA8C7 /* OCMFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMFunctions.h; sourceTree = "<group>"; };
+		4E825DB91E3BDBDD00ECA8C7 /* OCMLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMLocation.h; sourceTree = "<group>"; };
+		4E825DBA1E3BDBDD00ECA8C7 /* OCMMacroState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMMacroState.h; sourceTree = "<group>"; };
+		4E825DBB1E3BDBDD00ECA8C7 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		4E825DBC1E3BDBDD00ECA8C7 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		4E825DBD1E3BDBDD00ECA8C7 /* OCMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMRecorder.h; sourceTree = "<group>"; };
+		4E825DBE1E3BDBDD00ECA8C7 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
+		4E825DBF1E3BDD7B00ECA8C7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMOCK/libOCMock.a; sourceTree = "<group>"; };
+		4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryPresenterTests.m; sourceTree = "<group>"; };
 		4EBE209C1E36AD7E007E063B /* SliceOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceOfferItem.h; sourceTree = "<group>"; };
 		4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliceOfferItem.m; sourceTree = "<group>"; };
 		4EBE209F1E36AD97007E063B /* PercentageOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentageOfferItem.h; sourceTree = "<group>"; };
@@ -179,6 +201,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E825DC01E3BDD7B00ECA8C7 /* libOCMock.a in Frameworks */,
+				4E825DB21E3BDBA700ECA8C7 /* XCTest.framework in Frameworks */,
+				4E825DB01E3BDBA100ECA8C7 /* Foundation.framework in Frameworks */,
+				4E825DAE1E3BDB9C00ECA8C7 /* UIKit.framework in Frameworks */,
 				76FD5C04005CEEE67A1A9BD7 /* libPods-HenriPotierTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +261,7 @@
 				4E7650501E335C3400565C69 /* Classes */,
 				4E76504F1E335BEB00565C69 /* Resources */,
 				4E76501C1E33581100565C69 /* Supporting Files */,
+				4E825DB41E3BDBDD00ECA8C7 /* OCMock */,
 			);
 			path = HenriPotier;
 			sourceTree = "<group>";
@@ -251,8 +278,10 @@
 		4E7650351E33581100565C69 /* HenriPotierTests */ = {
 			isa = PBXGroup;
 			children = (
-				4E7650361E33581100565C69 /* HenriPotierTests.m */,
 				4E7650381E33581100565C69 /* Info.plist */,
+				4E7650361E33581100565C69 /* HenriPotierTests.m */,
+				4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */,
+				4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */,
 			);
 			path = HenriPotierTests;
 			sourceTree = "<group>";
@@ -374,6 +403,24 @@
 				4EC7DC4B1E337548004B4D51 /* Wireframe */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		4E825DB41E3BDBDD00ECA8C7 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				4E825DB51E3BDBDD00ECA8C7 /* NSNotificationCenter+OCMAdditions.h */,
+				4E825DB61E3BDBDD00ECA8C7 /* OCMArg.h */,
+				4E825DB71E3BDBDD00ECA8C7 /* OCMConstraint.h */,
+				4E825DB81E3BDBDD00ECA8C7 /* OCMFunctions.h */,
+				4E825DB91E3BDBDD00ECA8C7 /* OCMLocation.h */,
+				4E825DBA1E3BDBDD00ECA8C7 /* OCMMacroState.h */,
+				4E825DBB1E3BDBDD00ECA8C7 /* OCMock.h */,
+				4E825DBC1E3BDBDD00ECA8C7 /* OCMockObject.h */,
+				4E825DBD1E3BDBDD00ECA8C7 /* OCMRecorder.h */,
+				4E825DBE1E3BDBDD00ECA8C7 /* OCMStubRecorder.h */,
+			);
+			name = OCMock;
+			path = ../OCMOCK/OCMock;
 			sourceTree = "<group>";
 		};
 		4EC7DC391E336D4C004B4D51 /* Common */ = {
@@ -544,6 +591,10 @@
 		C1D5D5091F46DE00D09809B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E825DBF1E3BDD7B00ECA8C7 /* libOCMock.a */,
+				4E825DB11E3BDBA700ECA8C7 /* XCTest.framework */,
+				4E825DAF1E3BDBA100ECA8C7 /* Foundation.framework */,
+				4E825DA81E3BDAC400ECA8C7 /* UIKit.framework */,
 				A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */,
 				47B9169074BDEA174A2B2CBD /* libPods-HenriPotierTests.a */,
 				DFB5727B2DF865E76BA70B96 /* libPods-HenriPotierUITests.a */,
@@ -875,6 +926,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E825DC41E3C048300ECA8C7 /* LibraryPresenterTests.m in Sources */,
+				4E825DA51E3BD59300ECA8C7 /* LibraryInteractorTests.m in Sources */,
 				4E7650371E33581100565C69 /* HenriPotierTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1044,8 +1097,19 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8632B2XJP3;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"$(SRCROOT)/OCMock",
+				);
 				INFOPLIST_FILE = HenriPotierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OCMOCK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hervouin.HenriPotierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotier.app/HenriPotier";
@@ -1058,8 +1122,19 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8632B2XJP3;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"$(PROJECT",
+				);
 				INFOPLIST_FILE = HenriPotierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/OCMOCK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hervouin.HenriPotierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HenriPotier.app/HenriPotier";

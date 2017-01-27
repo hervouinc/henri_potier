@@ -40,7 +40,7 @@
 
 - (void)foundBookItems:(NSArray<BookItem*> *)items
 {
-    if (items == nil || items.count == 0)
+    if (items.count == 0)
     {
         [self.userInterface showNoContentMessageWithError:nil];
     }

@@ -31,6 +31,10 @@
 
 - (NSArray<BookItem *> *)retrieveBookItems
 {
+    if(self.bookItems == nil)
+    {
+        return @[];
+    }
     return [self.bookItems allValues];
 }
 

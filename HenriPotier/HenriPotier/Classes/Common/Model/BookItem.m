@@ -42,4 +42,47 @@
 
     return item;
 }
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@  title: %@  isbn: %@  price: %@ coverURL:%@  imageName: %@", [super description], self.title, self.isbn, self.price, self.coverURL, self.imageName];
+}
+
+- (BOOL)isEqualToBookItem:(BookItem *)item
+{
+    if (!item)
+    {
+        return NO;
+    }
+
+    BOOL hasEqualTitles = [self.title isEqualToString:item.title];
+    BOOL hasEqualIsbn = [self.isbn isEqualToString:item.isbn];
+    BOOL hasEqualPrice = [self.price isEqualToNumber:item.price];
+    BOOL hasEqualCover = (self.coverURL == item.coverURL) || [self.coverURL isEqualToString:item.coverURL];
+    BOOL hasEqualImageName = (self.imageName == item.imageName) || [self.imageName isEqualToString:item.imageName];
+
+    return hasEqualTitles && hasEqualIsbn && hasEqualPrice && hasEqualCover && hasEqualImageName;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    if (![object isKindOfClass:BookItem.class])
+    {
+        return NO;
+    }
+
+    return [self isEqualToBookItem:object];
+}
+
+- (NSUInteger)hash
+{
+    return self.title.hash ^ self.isbn.hash ^ self.price.hash ^ self.coverURL.hash ^ self.imageName.hash;
+}
+
+
 @end

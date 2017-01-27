@@ -38,9 +38,11 @@
             return;
         }
 
-        [welf findCoverForBookItems:bookItems];
+        NSArray<BookItem*> *validBookItems = (bookItems == nil) ? @[] : bookItems;
 
-        [welf.output foundBookItems:bookItems];
+        [welf.output foundBookItems:validBookItems];
+        
+        [welf findCoverForBookItems:validBookItems];
     }];
 }
 

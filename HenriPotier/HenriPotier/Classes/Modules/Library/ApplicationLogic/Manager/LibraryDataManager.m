@@ -17,7 +17,7 @@
 - (void)bookItemsWithCompletionBlock:(LibraryDataManagerItemsCompletionBlock)completionBlock
 {
     NSArray<BookItem*> *bookItems = [self.localCachedDataStore retrieveBookItems];
-    if(bookItems != nil & bookItems.count > 0)
+    if(bookItems.count > 0)
     {
         completionBlock(bookItems, nil);
         return;
