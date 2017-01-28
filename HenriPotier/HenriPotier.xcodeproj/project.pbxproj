@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		421EFEA3A11FBDE9A6972EEB /* libPods-HenriPotierUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB5727B2DF865E76BA70B96 /* libPods-HenriPotierUITests.a */; };
+		4E4A21081E3CEB7E00F4DB7E /* LibraryViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DCB1E3CD40A00ECA8C7 /* LibraryViewControllerSpec.m */; };
 		4E76501E1E33581100565C69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E76501D1E33581100565C69 /* main.m */; };
 		4E7650211E33581100565C69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650201E33581100565C69 /* AppDelegate.m */; };
 		4E7650271E33581100565C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E7650251E33581100565C69 /* Main.storyboard */; };
 		4E7650291E33581100565C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E7650281E33581100565C69 /* Assets.xcassets */; };
 		4E76502C1E33581100565C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E76502A1E33581100565C69 /* LaunchScreen.storyboard */; };
 		4E7650371E33581100565C69 /* HenriPotierTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650361E33581100565C69 /* HenriPotierTests.m */; };
-		4E7650421E33581100565C69 /* HenriPotierUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650411E33581100565C69 /* HenriPotierUITests.m */; };
 		4E7650531E335DE900565C69 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E7650521E335DE900565C69 /* AppDependencies.m */; };
 		4E825DA51E3BD59300ECA8C7 /* LibraryInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */; };
 		4E825DAE1E3BDB9C00ECA8C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DA81E3BDAC400ECA8C7 /* UIKit.framework */; };
@@ -22,6 +22,11 @@
 		4E825DB21E3BDBA700ECA8C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DB11E3BDBA700ECA8C7 /* XCTest.framework */; };
 		4E825DC01E3BDD7B00ECA8C7 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DBF1E3BDD7B00ECA8C7 /* libOCMock.a */; };
 		4E825DC41E3C048300ECA8C7 /* LibraryPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */; };
+		4E825DC81E3CAFB900ECA8C7 /* CartInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DC71E3CAFB900ECA8C7 /* CartInteractorTests.m */; };
+		4E825DCA1E3CAFC700ECA8C7 /* CartPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E825DC91E3CAFC700ECA8C7 /* CartPresenterTests.m */; };
+		4E825DD01E3CE47800ECA8C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DA81E3BDAC400ECA8C7 /* UIKit.framework */; };
+		4E825DD11E3CE48600ECA8C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DAF1E3BDBA100ECA8C7 /* Foundation.framework */; };
+		4E825DD21E3CE48C00ECA8C7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E825DB11E3BDBA700ECA8C7 /* XCTest.framework */; };
 		4EBE209E1E36AD7E007E063B /* SliceOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */; };
 		4EBE20A11E36AD97007E063B /* PercentageOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A01E36AD97007E063B /* PercentageOfferItem.m */; };
 		4EBE20A41E36ADD5007E063B /* MinusOfferItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EBE20A31E36ADD5007E063B /* MinusOfferItem.m */; };
@@ -52,7 +57,7 @@
 		4EC7DCB11E351484004B4D51 /* AppReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCB01E351484004B4D51 /* AppReachability.m */; };
 		4EC7DCB81E351FAE004B4D51 /* RemoteDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCB71E351FAE004B4D51 /* RemoteDataStore.m */; };
 		4EC7DCBE1E352553004B4D51 /* HenryPotier.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EC7DCBC1E352553004B4D51 /* HenryPotier.xcdatamodeld */; };
-		4EEF774B1E3A7391001EBB42 /* GoToCartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF774A1E3A7391001EBB42 /* GoToCartView.m */; };
+		4EEF774B1E3A7391001EBB42 /* GoToCartButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EEF774A1E3A7391001EBB42 /* GoToCartButton.m */; };
 		76FD5C04005CEEE67A1A9BD7 /* libPods-HenriPotierTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 47B9169074BDEA174A2B2CBD /* libPods-HenriPotierTests.a */; };
 		A514067E77D865CE8715101A /* libPods-HenriPotier.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */; };
 /* End PBXBuildFile section */
@@ -89,8 +94,6 @@
 		4E7650361E33581100565C69 /* HenriPotierTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HenriPotierTests.m; sourceTree = "<group>"; };
 		4E7650381E33581100565C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E76503D1E33581100565C69 /* HenriPotierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HenriPotierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E7650411E33581100565C69 /* HenriPotierUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HenriPotierUITests.m; sourceTree = "<group>"; };
-		4E7650431E33581100565C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E7650511E335DE900565C69 /* AppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		4E7650521E335DE900565C69 /* AppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryInteractorTests.m; sourceTree = "<group>"; };
@@ -109,6 +112,9 @@
 		4E825DBE1E3BDBDD00ECA8C7 /* OCMStubRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMStubRecorder.h; sourceTree = "<group>"; };
 		4E825DBF1E3BDD7B00ECA8C7 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMOCK/libOCMock.a; sourceTree = "<group>"; };
 		4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryPresenterTests.m; sourceTree = "<group>"; };
+		4E825DC71E3CAFB900ECA8C7 /* CartInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartInteractorTests.m; sourceTree = "<group>"; };
+		4E825DC91E3CAFC700ECA8C7 /* CartPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartPresenterTests.m; sourceTree = "<group>"; };
+		4E825DCB1E3CD40A00ECA8C7 /* LibraryViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LibraryViewControllerSpec.m; path = ../HenriPotierUITests/LibraryViewControllerSpec.m; sourceTree = "<group>"; };
 		4EBE209C1E36AD7E007E063B /* SliceOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliceOfferItem.h; sourceTree = "<group>"; };
 		4EBE209D1E36AD7E007E063B /* SliceOfferItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliceOfferItem.m; sourceTree = "<group>"; };
 		4EBE209F1E36AD97007E063B /* PercentageOfferItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PercentageOfferItem.h; sourceTree = "<group>"; };
@@ -177,8 +183,8 @@
 		4EC7DCB61E351FAE004B4D51 /* RemoteDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteDataStore.h; sourceTree = "<group>"; };
 		4EC7DCB71E351FAE004B4D51 /* RemoteDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteDataStore.m; sourceTree = "<group>"; };
 		4EC7DCBD1E352553004B4D51 /* HenryPotier.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HenryPotier.xcdatamodel; sourceTree = "<group>"; };
-		4EEF77491E3A7391001EBB42 /* GoToCartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToCartView.h; sourceTree = "<group>"; };
-		4EEF774A1E3A7391001EBB42 /* GoToCartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToCartView.m; sourceTree = "<group>"; };
+		4EEF77491E3A7391001EBB42 /* GoToCartButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToCartButton.h; sourceTree = "<group>"; };
+		4EEF774A1E3A7391001EBB42 /* GoToCartButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoToCartButton.m; sourceTree = "<group>"; };
 		582B0AECE476BD7EBAB58A5A /* Pods-HenriPotierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierTests/Pods-HenriPotierTests.release.xcconfig"; sourceTree = "<group>"; };
 		8E5D3AADEBE2AF9EF3316675 /* Pods-HenriPotierUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HenriPotierUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HenriPotierUITests/Pods-HenriPotierUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A60132D3DBECC0AFB0C533C5 /* libPods-HenriPotier.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HenriPotier.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +219,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E825DD21E3CE48C00ECA8C7 /* XCTest.framework in Frameworks */,
+				4E825DD11E3CE48600ECA8C7 /* Foundation.framework in Frameworks */,
+				4E825DD01E3CE47800ECA8C7 /* UIKit.framework in Frameworks */,
 				421EFEA3A11FBDE9A6972EEB /* libPods-HenriPotierUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,7 +247,6 @@
 			children = (
 				4E76501B1E33581100565C69 /* HenriPotier */,
 				4E7650351E33581100565C69 /* HenriPotierTests */,
-				4E7650401E33581100565C69 /* HenriPotierUITests */,
 				4E76501A1E33581100565C69 /* Products */,
 				23EF74AB35B97E879311021E /* Pods */,
 				C1D5D5091F46DE00D09809B5 /* Frameworks */,
@@ -282,17 +290,11 @@
 				4E7650361E33581100565C69 /* HenriPotierTests.m */,
 				4E825DA41E3BD59300ECA8C7 /* LibraryInteractorTests.m */,
 				4E825DC31E3C048300ECA8C7 /* LibraryPresenterTests.m */,
+				4E825DC71E3CAFB900ECA8C7 /* CartInteractorTests.m */,
+				4E825DC91E3CAFC700ECA8C7 /* CartPresenterTests.m */,
+				4E825DCB1E3CD40A00ECA8C7 /* LibraryViewControllerSpec.m */,
 			);
 			path = HenriPotierTests;
-			sourceTree = "<group>";
-		};
-		4E7650401E33581100565C69 /* HenriPotierUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4E7650411E33581100565C69 /* HenriPotierUITests.m */,
-				4E7650431E33581100565C69 /* Info.plist */,
-			);
-			path = HenriPotierUITests;
 			sourceTree = "<group>";
 		};
 		4E76504F1E335BEB00565C69 /* Resources */ = {
@@ -499,8 +501,8 @@
 				4EC7DC841E33DAAB004B4D51 /* LibraryItemViewCell.h */,
 				4EC7DC851E33DAAB004B4D51 /* LibraryItemViewCell.m */,
 				4EC7DC5F1E337861004B4D51 /* LibraryViewInterface.h */,
-				4EEF77491E3A7391001EBB42 /* GoToCartView.h */,
-				4EEF774A1E3A7391001EBB42 /* GoToCartView.m */,
+				4EEF77491E3A7391001EBB42 /* GoToCartButton.h */,
+				4EEF774A1E3A7391001EBB42 /* GoToCartButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -912,7 +914,7 @@
 				4EC7DC961E34E4AA004B4D51 /* CartDataManager.m in Sources */,
 				4EBE20A41E36ADD5007E063B /* MinusOfferItem.m in Sources */,
 				4EC7DC571E337575004B4D51 /* CartPresenter.m in Sources */,
-				4EEF774B1E3A7391001EBB42 /* GoToCartView.m in Sources */,
+				4EEF774B1E3A7391001EBB42 /* GoToCartButton.m in Sources */,
 				4EC7DC6A1E33867C004B4D51 /* LibraryDisplayItem.m in Sources */,
 				4E7650211E33581100565C69 /* AppDelegate.m in Sources */,
 				4EC7DC901E34CED3004B4D51 /* OfferItem.m in Sources */,
@@ -926,9 +928,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E825DC81E3CAFB900ECA8C7 /* CartInteractorTests.m in Sources */,
 				4E825DC41E3C048300ECA8C7 /* LibraryPresenterTests.m in Sources */,
+				4E825DCA1E3CAFC700ECA8C7 /* CartPresenterTests.m in Sources */,
 				4E825DA51E3BD59300ECA8C7 /* LibraryInteractorTests.m in Sources */,
 				4E7650371E33581100565C69 /* HenriPotierTests.m in Sources */,
+				4E4A21081E3CEB7E00F4DB7E /* LibraryViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,7 +941,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E7650421E33581100565C69 /* HenriPotierUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1074,7 @@
 			baseConfigurationReference = C7D5378F9F6C7D97EBC770AE /* Pods-HenriPotier.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 8632B2XJP3;
 				INFOPLIST_FILE = HenriPotier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1083,6 +1088,7 @@
 			baseConfigurationReference = A8C4B58AB1E2048D11417134 /* Pods-HenriPotier.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = 8632B2XJP3;
 				INFOPLIST_FILE = HenriPotier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1126,7 +1132,6 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
-					"$(PROJECT",
 				);
 				INFOPLIST_FILE = HenriPotierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1145,9 +1150,28 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 395C5225EBCE8342EA2302DB /* Pods-HenriPotierUITests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 8632B2XJP3;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Expecta\"",
+					"\"${PODS_ROOT}/Headers/Public/KPAViewControllerTestHelper\"",
+					"\"${PODS_ROOT}/Headers/Public/Specta\"",
+					"$(PROJECT_DIR)/**",
+					"$(SRCROOT)/",
+				);
 				INFOPLIST_FILE = HenriPotierUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Expecta\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KPAViewControllerTestHelper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Specta\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hervouin.HenriPotierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = HenriPotier;
@@ -1159,8 +1183,25 @@
 			baseConfigurationReference = 8E5D3AADEBE2AF9EF3316675 /* Pods-HenriPotierUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 8632B2XJP3;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/Expecta\"",
+					"\"${PODS_ROOT}/Headers/Public/KPAViewControllerTestHelper\"",
+					"\"${PODS_ROOT}/Headers/Public/Specta\"",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = HenriPotierUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Expecta\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/KPAViewControllerTestHelper\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Specta\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/AFNetworking\"",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hervouin.HenriPotierUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = HenriPotier;

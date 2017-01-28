@@ -33,4 +33,43 @@
     return ((int)(price/self.sliceValue.floatValue))*self.value.floatValue;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@  OfferType: %ld  Value: %@  SliceValue: %@", [super description], self.offerType, self.value, self.sliceValue];
+}
+
+- (BOOL)isEqualToSliceOfferItem:(SliceOfferItem *)item
+{
+    if (!item)
+    {
+        return NO;
+    }
+
+    BOOL hasEqualOfferType = self.offerType == item.offerType;
+    BOOL hasEqualValue = [self.value isEqualToNumber:item.value];
+    BOOL hasEqualSliceValue = [self.sliceValue isEqualToNumber:item.sliceValue];
+
+    return hasEqualOfferType && hasEqualValue && hasEqualSliceValue;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    if (![object isKindOfClass:SliceOfferItem.class])
+    {
+        return NO;
+    }
+
+    return [self isEqualToSliceOfferItem:object];
+}
+
+- (NSUInteger)hash
+{
+    return self.sliceValue.hash ^ self.value.hash;
+}
+
 @end

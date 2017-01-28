@@ -101,4 +101,13 @@
     [self.presenter addToCartBookWithIsbn:isbn];
 }
 
+- (void)testCartModuleDidUpdateCartItemsCountDisplaysCartItemsCount
+{
+    int count = 2;
+
+    [[self.ui expect] showNumberOfItemsInCart:count];
+
+    [self.presenter cartModuleDidUpdateCartItemsCount:count];
+}
+
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GoToCartView : UIView
+@interface GoToCartButton : UIButton
 
 @property (nonatomic, assign) int number;
 

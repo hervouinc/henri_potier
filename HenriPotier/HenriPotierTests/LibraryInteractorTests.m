@@ -55,7 +55,7 @@
     [self.interactor findBookItems];
 }
 
-- (void)testFindingBookItemsWithErrorReturnsError
+- (void)testFindingBookItemsWithEmptyBookItemsReturnsEmptyBookItems
 {
     [self dataManagerWillReturnBookItems:@[] error:nil];
 
@@ -77,8 +77,7 @@
     [self.interactor findBookItems];
 }
 
-
-- (void)testFindingBookItemsWithEmptyBookItemsReturnsEmptyBookItems
+- (void)testFindingBookItemsWithErrorReturnsError
 {
     NSError *error = [NSError errorWithDomain:NSURLErrorDomain code:NSURLErrorNotConnectedToInternet userInfo:nil];
     [self dataManagerWillReturnBookItems:OCMOCK_ANY error:error];
@@ -120,6 +119,13 @@
     [[self.output expect] updatedBookItem:bookItemWithImage];
 
     [self.interactor findCoverForBookItems:@[bookItem]];
+}
+
+- (void)testAppReachabilityChangesToReachableAsksToFindItems
+{
+    [[self.dataManager expect] bookItemsWithCompletionBlock:OCMOCK_ANY];
+
+    [self.interactor reachabilityDidChange:YES];
 }
 
 #pragma mark - Reusable code

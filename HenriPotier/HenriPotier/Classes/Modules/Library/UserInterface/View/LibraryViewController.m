@@ -10,7 +10,7 @@
 #import "LibraryDisplayData.h"
 #import "LibraryDisplayItem.h"
 #import "LibraryItemViewCell.h"
-#import "GoToCartView.h"
+#import "GoToCartButton.h"
 
 static NSString* const LibraryCellIdentifier = @"LibraryCell";
 
@@ -18,6 +18,7 @@ static NSString* const LibraryCellIdentifier = @"LibraryCell";
 @property (nonatomic, strong)   LibraryDisplayData* data;
 @property (nonatomic, assign)   int numberOfItemsInCart;
 @property (nonatomic, strong)   IBOutlet UILabel* errorLabel;
+@property (nonatomic, strong)   GoToCartButton *goToCartButton;
 @end
 
 @implementation LibraryViewController
@@ -25,7 +26,10 @@ static NSString* const LibraryCellIdentifier = @"LibraryCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.goToCartButton = [[GoToCartButton alloc] initWithFrame:CGRectMake(0, 0, 45, 25)];
+
     [self refreshNavigationBar];
 }
 
@@ -39,13 +43,11 @@ static NSString* const LibraryCellIdentifier = @"LibraryCell";
 {
     self.navigationItem.title = @"Bibliothèque";
 
-    GoToCartView *goToCartview = [[GoToCartView alloc] initWithFrame:CGRectMake(0, 0, 45, 25)];
-    goToCartview.number = self.numberOfItemsInCart;
+    self.goToCartButton.number = self.numberOfItemsInCart;
 
-    UITapGestureRecognizer *singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapCartButton:)];
-    [goToCartview addGestureRecognizer:singleFingerTap];
+    [self.goToCartButton addTarget:self action:@selector(didTapCartButton:) forControlEvents:UIControlEventTouchUpInside];
 
-    UIBarButtonItem *numberItem = [[UIBarButtonItem alloc] initWithCustomView:goToCartview];
+    UIBarButtonItem *numberItem = [[UIBarButtonItem alloc] initWithCustomView:self.goToCartButton];
     self.navigationItem.rightBarButtonItem = numberItem;
 
     return;

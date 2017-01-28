@@ -13,11 +13,16 @@ target 'HenriPotier' do
   target 'HenriPotierTests' do
     inherit! :search_paths
     # Pods for testing
+    pod "Specta"
+    pod "Expecta"
+    pod "KPAViewControllerTestHelper"
   end
 
   target 'HenriPotierUITests' do
     inherit! :search_paths
-    # Pods for testing
+    pod "Specta"
+    pod "Expecta"
+    pod "KPAViewControllerTestHelper"
   end
 
 end

@@ -33,7 +33,8 @@
     __weak typeof(self) welf = self;
 
     [self.dataManager cartItemsWithCompletionBlock:^(NSArray<CartItem*> *cartItems) {
-        [welf.output foundCartItems:cartItems];
+        NSArray<CartItem*> *validCartItems = (cartItems == nil) ? @[] : cartItems;
+        [welf.output foundCartItems:validCartItems];
     }];
 }
 
@@ -42,7 +43,10 @@
     __weak typeof(self) welf = self;
 
     [welf.dataManager offerItemsWithIsbns:[self isbnsForCartItems:items] completionBlock:^(NSArray<OfferItem *> *results) {
-        [welf.output foundBestOffer:[self bestOfferFromOfferItems:results andCartItems:items] forCartItems:items];
+        if(results != nil && results.count > 0)
+        {
+            [welf.output foundBestOffer:[self bestOfferFromOfferItems:results andCartItems:items] forCartItems:items];
+        }
     }];
 }
 
@@ -104,10 +108,9 @@
 - (OfferItem*)bestOfferFromOfferItems:(NSArray<OfferItem*>*)offerItems andCartItems:(NSArray<CartItem*>*)cartItems
 {
     float totalPrice = [self totalPriceForCartItems:cartItems];
-    float bestDiscount = 0;
     __block OfferItem *bestOffer = nil;
     [offerItems enumerateObjectsUsingBlock:^(OfferItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if([obj discountOnPrice:totalPrice] > bestDiscount)
+        if([obj discountOnPrice:totalPrice] > [bestOffer discountOnPrice:totalPrice])
         {
             bestOffer = obj;
         }

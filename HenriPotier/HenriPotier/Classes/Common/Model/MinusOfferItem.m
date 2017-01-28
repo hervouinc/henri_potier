@@ -31,4 +31,42 @@
     return self.value.floatValue;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@  OfferType: %ld  Value: %@", [super description], self.offerType, self.value];
+}
+
+- (BOOL)isEqualToMinusOfferItem:(MinusOfferItem *)item
+{
+    if (!item)
+    {
+        return NO;
+    }
+
+    BOOL hasEqualOfferType = self.offerType == item.offerType;
+    BOOL hasEqualValue = [self.value isEqualToNumber:item.value];
+
+    return hasEqualOfferType && hasEqualValue;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    if (![object isKindOfClass:MinusOfferItem.class])
+    {
+        return NO;
+    }
+
+    return [self isEqualToMinusOfferItem:object];
+}
+
+- (NSUInteger)hash
+{
+    return self.value.hash;
+}
+
 @end

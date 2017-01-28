@@ -28,4 +28,42 @@
     return item;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@  BookItem: %@  count: %@", [super description], self.bookItem, self.count];
+}
+
+- (BOOL)isEqualToCartItem:(CartItem *)item
+{
+    if (!item)
+    {
+        return NO;
+    }
+
+    BOOL hasEqualBookItem = [self.bookItem isEqual:item.bookItem];
+    BOOL hasEqualCount = [self.count isEqualToNumber:item.count];
+
+    return hasEqualBookItem && hasEqualCount;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    if (![object isKindOfClass:BookItem.class])
+    {
+        return NO;
+    }
+
+    return [self isEqualToCartItem:object];
+}
+
+- (NSUInteger)hash
+{
+    return self.bookItem.hash ^ self.count.hash;
+}
+
 @end

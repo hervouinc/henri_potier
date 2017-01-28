@@ -30,4 +30,42 @@
     return price*self.value.floatValue/100;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@  OfferType: %ld  Value: %@", [super description], self.offerType, self.value];
+}
+
+- (BOOL)isEqualToPercentageOfferItem:(PercentageOfferItem *)item
+{
+    if (!item)
+    {
+        return NO;
+    }
+
+    BOOL hasEqualOfferType = self.offerType == item.offerType;
+    BOOL hasEqualValue = [self.value isEqualToNumber:item.value];
+
+    return hasEqualOfferType && hasEqualValue;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (self == object)
+    {
+        return YES;
+    }
+
+    if (![object isKindOfClass:PercentageOfferItem.class])
+    {
+        return NO;
+    }
+
+    return [self isEqualToPercentageOfferItem:object];
+}
+
+- (NSUInteger)hash
+{
+    return self.value.hash;
+}
+
 @end

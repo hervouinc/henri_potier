@@ -40,6 +40,7 @@
     }
     else
     {
+        [self.cartInteractor findBestOfferForCartItems:items];
         [self.userInterface showCartDisplayData:[self cartDisplayDataWithCartItems:items]];
     }
 
@@ -47,12 +48,15 @@
 
     [self.userInterface showTotalPrice:[NSString stringWithFormat:@"%.2f €", [self totalPriceForCartItems:items]]];
     [self.userInterface showOldTotalPrice:@""];
-
-    [self.cartInteractor findBestOfferForCartItems:items];
 }
 
 - (void)foundBestOffer:(OfferItem *)offerItem forCartItems:(NSArray<CartItem *> *)items
 {
+    if(offerItem == nil || items == nil)
+    {
+        return;
+    }
+
     float totalPrice = [self totalPriceForCartItems:items];
     float discount = [offerItem discountOnPrice:totalPrice];
 

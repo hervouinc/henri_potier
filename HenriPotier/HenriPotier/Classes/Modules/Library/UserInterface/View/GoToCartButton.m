@@ -6,9 +6,9 @@
 //  Copyright © 2017 Hervouin. All rights reserved.
 //
 
-#import "GoToCartView.h"
+#import "GoToCartButton.h"
 
-@implementation GoToCartView
+@implementation GoToCartButton
 
 - (void)awakeFromNib
 {
@@ -24,14 +24,17 @@
 
 - (void)updateView
 {
-    UIImageView* iv = [[UIImageView alloc] initWithFrame:self.frame];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+
+    UIImageView* iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     iv.image = [UIImage imageNamed:@"Cart"];
     iv.contentMode = UIViewContentModeScaleAspectFit;
-    [self addSubview:iv];
+    [view addSubview:iv];
 
     if(self.number > 0)
     {
-        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width - 20, 0, 20, 20)];
+        float width = self.number > 99 ? 30 : 20;
+        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width - width, 0, width, 20)];
         numberLabel.font = [UIFont systemFontOfSize:12];
         numberLabel.text = [NSString stringWithFormat:@"%d", self.number];
         numberLabel.textAlignment = NSTextAlignmentCenter;
@@ -40,8 +43,15 @@
         numberLabel.layer.cornerRadius = numberLabel.frame.size.height/2;
         numberLabel.layer.masksToBounds = YES;
 
-        [self addSubview:numberLabel];
+        [view addSubview:numberLabel];
     }
+
+    UIGraphicsBeginImageContext(view.bounds.size);
+    [view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    [self setBackgroundImage:image forState:UIControlStateNormal];
 }
 
 @end
